@@ -6,9 +6,13 @@ This project leverages Big Data analytics to automate athlete speed detection us
 The project integrates computer vision with Big Data analytics to estimate athlete speed in real time.
 
 Step 1: Detection — YOLOv8 identifies athletes in each frame.
+
 Step 2: Tracking — DeepSORT assigns a unique ID to each athlete, maintaining consistency across frames.
+
 Step 3: Speed Estimation — Displacement of bounding boxes between consecutive frames is converted to real-world speed using video frame rate and scaling parameters.
+
 Step 4: Spark Integration — Apache Spark performs distributed processing on extracted data, computing metrics such as average and maximum speeds for all athletes.
+
 Step 5: Visualization — The processed video displays each athlete’s ID, real-time speed (km/h), and trajectory.
 
 ## Results / Insights
